@@ -1,0 +1,156 @@
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #00478A;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Form Container */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width:max-content;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    margin-top: 0;
+}
+
+/* Form Inputs */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form span {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+form span input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Button */
+.botonera {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.botonera input[type="button"] {
+    background-color: #1BC4DE;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botonera input[type="button"]:hover {
+    background-color: #17A1B5;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    background-color: #00478A;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #003366;
+}
+
+/* Icons and Text */
+.icon-text {
+    /* margin-right: 5px;
+    height: 10vh;
+    text-align: end; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-text img {
+    
+    height: 10vh;
+    margin-bottom: 5px;
+}
+.icon-text span{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#txtDescripción{
+    height: 100%;
+    width: 100%;
+}
+
+.Chkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .Chkbox label {
+    width: auto; /* Ajusta el ancho según sea necesario */
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  .Chkbox span {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+  }
+  
+  /* .Chkbox span label {
+    margin-left: px; 
+  }
+   */
+

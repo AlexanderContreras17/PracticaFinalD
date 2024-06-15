@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="estilos7.css" />
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="HTML5 Logo" />
+      <h1>HTML Formularios</h1>
+    </header>
+
+    <nav>
+      <a href="#" class="icon-text"><img src="images/cuenta.png" />Cuenta</a>
+      <a href="#" class="icon-text"><img src="images/carrera.png" />Carreras</a>
+      <a href="#" class="icon-text"
+        ><img src="images/materia.png" alt="Materias Icon" />Materias</a
+      >
+      <a href="#" class="icon-text"><img src="images/aula.png" />Aulas</a>
+      <a href="#" class="icon-text"><img src="images/docente.png" />Docentes</a>
+    </nav>
+
+    <form>
+      <h2>Captura un nuevo docente:</h2>
+
+      <label>Clave:</label>
+      <input class="half" type="text" id="txtClave" />
+
+      <label class="twolines">Fecha de ingreso:</label>
+      <input
+        class="half"
+        type="date"
+        id="txtFechaIng"
+        placeholder="dd/mm/aaaa"
+      />
+
+      <label>Nombre:</label>
+      <input type="text" id="txtNombre" />
+      <label class="twolines">Grado de estudios:</label>
+      <select id="cmbGradoEstudios">
+        <option value="-1">-- Seleccione grado de estudios --</option>
+        <option>Licenciatura</option>
+        <option>Maestría</option>
+        <option>Especialización</option>
+        <option>Doctorado</option>
+      </select>
+      <label>Carrera:</label>
+      <input
+        type="text"
+        id="txtCarrera"
+        placeholder="Carrera que estudio el docente"
+      />
+
+      <label class="twolines">Fecha de nacimiento:</label>
+      <input
+        class="half"
+        type="date"
+        id="txtFechaNac"
+        placeholder="dd/mm/aaaa"
+      />
+
+      <label>Sexo:</label>
+      <span class="half"
+        ><input type="radio" id="txtHombre" /><label for="txtHombre"
+          >Hombre</label
+        ><input type="radio" id="txtMujer" /><label for="txtMujer"
+          >Mujer</label
+        ></span
+      >
+
+      <label>RFC:</label>
+      <input type="text" id="txtRFC" placeholder="RFC con homoclave" />
+
+      <label>Teléfono:</label>
+      <input class="half" type="tel" id="txtTelefono" />
+
+      <label>Correo Electrónico:</label>
+      <input class="half" type="email" id="txtCorreoElectronico" />
+
+      <div class="botonera">
+        <input type="button" value="Agregar" />
+        <input type="button" value="Cancelar" />
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="estilos7.css" />
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="HTML5 Logo" />
+      <h1>HTML Formularios</h1>
+    </header>
+
+    <nav>
+      <a href="#" class="icon-text"><img src="images/cuenta.png" />Cuenta</a>
+      <a href="#" class="icon-text"><img src="images/carrera.png" />Carreras</a>
+      <a href="#" class="icon-text"
+        ><img src="images/materia.png" alt="Materias Icon" />Materias</a
+      >
+      <a href="#" class="icon-text"><img src="images/aula.png" />Aulas</a>
+      <a href="#" class="icon-text"><img src="images/docente.png" />Docentes</a>
+    </nav>
+
+    <form>
+      <h2>Captura una materia:</h2>
+
+      <label>Clave:</label>
+      <input class="half" placeholder="(ABC-1234)" type="text" id="txtClave" />
+
+      <label>Nombre:</label>
+      <input class="half" type="text" id="txtNombre" />
+
+      <label>Carrera:</label>
+
+      <select id="cmbCarrera">
+        <option>-- Seleccione una carrera --</option>
+      </select>
+
+      <label class="twolines">Sesiones y Creditos:</label>
+      <input
+        class="half"
+        placeholder="(HT-HP-CR)"
+        type="number"
+        id="txtST"
+        min="0"
+        max="100"
+      />
+
+      <label>Semestre:</label>
+      <input class="half" type="number" id="txtSemestre" min="1" max="9" />
+
+      <label>Objetivo:</label>
+      <textarea
+        id="txtObjetivo"
+        rows="5"
+        placeholder="Escriba el objetivo de la materia"
+      ></textarea>
+
+      <div class="botonera">
+        <input type="button" value="Agregar" />
+        <input type="reset" value="Borrar" />
+        <input type="button" value="Cancelar" />
+      </div>
+    </form>
+  </body>
+</html>
