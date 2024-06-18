@@ -5,20 +5,25 @@
     <link rel="stylesheet" href="estilos7.css" />
     <title></title>
   </head>
-  <body>
+  <body id="aula">
     <header>
       <img src="images/logo.png" alt="HTML5 Logo" />
       <h1>HTML Formularios</h1>
     </header>
 
     <nav>
-      <a href="#" class="icon-text"><img src="images/cuenta.png" />Cuenta</a>
-      <a href="#" class="icon-text"><img src="images/carrera.png" />Carreras</a>
-      <a href="#" class="icon-text"
+      <a href="carrera.html" class="icon-text"
+        ><img src="images/carrera.png" />Carreras</a
+      >
+      <a href="materia.html" class="icon-text"
         ><img src="images/materia.png" alt="Materias Icon" />Materias</a
       >
-      <a href="#" class="icon-text"><img src="images/aula.png" />Aulas</a>
-      <a href="#" class="icon-text"><img src="images/docente.png" />Docentes</a>
+      <a href="aula.html" class="icon-text"
+        ><img src="images/aula.png" />Aulas</a
+      >
+      <a href="docente.html" class="icon-text"
+        ><img src="images/docente.png" />Docentes</a
+      >
     </nav>
     <form>
       <h2>Captura de aulas:</h2>
@@ -41,25 +46,40 @@
       <div class="Chkbox">
         <label>Tipo:</label>
         <span>
-          <input type="radio" id="txtSalon" /><label for="txtSalon"
-            >Salón de Clase</label
-          ><input type="radio" id="txtSalon" /><label for="txtLaboratorio"
-            >Laboratorio</label
-          ><input type="radio" id="txtLaboratorio" /><label for="txtTaller"
-            >Taller</label
-          ></span
-        >
+          <input type="radio" id="txtSalon" name="tipoSala" />
+          <label for="txtSalon">Salón de Clase</label>
+          <input type="radio" id="txtLaboratorio" name="tipoSala" />
+          <label for="txtLaboratorio">Laboratorio</label>
+          <input type="radio" id="txtTaller" name="tipoSala" />
+          <label for="txtTaller">Taller</label>
+        </span>
       </div>
+
       <div class="Chkbox">
         <label>Equipamiento:</label>
         <span>
-          <input type="checkbox" /><label>Equipo Audiovisual</label>
-          <input type="checkbox" /><label>Aire Acondicionado</label>
-          <input type="checkbox" /><label>Computadoras</label>
-          <input type="checkbox" /><label>Internet</label>
-          <input type="checkbox" /><label>Equipo Especializado</label>
-          <input type="checkbox" /><label>Agua</label>
-          <input type="checkbox" /><label>Gas</label>
+          <input type="radio" id="eqAudiovisual" name="equipamientoSala" />
+          <label for="eqAudiovisual">Equipo Audiovisual</label>
+          <input
+            type="radio"
+            id="eqAireAcondicionado"
+            name="equipamientoSala"
+          />
+          <label for="eqAireAcondicionado">Aire Acondicionado</label>
+          <input type="radio" id="eqComputadoras" name="equipamientoSala" />
+          <label for="eqComputadoras">Computadoras</label>
+          <input type="radio" id="eqInternet" name="equipamientoSala" />
+          <label for="eqInternet">Internet</label>
+          <input
+            type="radio"
+            id="eqEquipoEspecializado"
+            name="equipamientoSala"
+          />
+          <label for="eqEquipoEspecializado">Equipo Especializado</label>
+          <input type="radio" id="eqAgua" name="equipamientoSala" />
+          <label for="eqAgua">Agua</label>
+          <input type="radio" id="eqGas" name="equipamientoSala" />
+          <label for="eqGas">Gas</label>
         </span>
       </div>
 

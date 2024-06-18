@@ -29,7 +29,9 @@ form {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    max-width:max-content;
+    /* max-width:max-content; */
+    width: auto;
+    max-width: 800px;
     margin: 50px auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -38,6 +40,67 @@ form h2 {
     margin-top: 0;
 }
 
+/* Form Group */
+/* .form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.form-group label,
+.form-group input {
+    margin: 10px 0;
+}
+
+.half {
+    width: 48%;
+} */
+/* Form Group */
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Añade una separación de 10px entre los elementos */
+    margin-bottom: 15px; /* Espacio inferior entre grupos de formulario */
+}
+
+.form-group label {
+    flex: 0 0 100px; /* Ancho fijo para los labels */
+    text-align: right;
+}
+
+.form-group input,
+.form-group select
+.form-group span {
+    flex: 1;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.half {
+    width: calc(50% - 5px); /* Ajusta el ancho para mantener la separación total de 10px */
+}
+.form-group span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    border: none;
+    margin-top: 0;
+}
+.form-group span input[type="radio"] {
+    margin: 0;
+    padding: 0;
+}
+#cmbGradoEstudios{
+    width: 95%;
+}
+/* #txtFechaNac{
+    width: auto;
+} */
 /* Form Inputs */
 form label {
     display: block;
@@ -100,12 +163,46 @@ nav a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    display: inline-block;
 }
+nav a.active{
+    font-weight: bold;
+    color: #032e57;
+}
+/* body#carrera nav a[href="carrera.html"],
+body#materia nav a[href="materia.html"],
+body#aula nav a[href="aula.html"],
+body#docente nav a[href="docente.html"] {
+  font-weight: bold;
+  color: #032e57;
 
 nav a:hover {
     background-color: #003366;
-}
-
+} 
+    /* Estilo para el estado hover */
+    nav a:hover {
+        background-color: #003366;
+        color: white; /* Cambia esto según el estilo que desees */
+      }
+  
+      /* Estilo específico para cada página (enlace activo) */
+      body#carrera nav a[href="carrera.html"],
+      body#materia nav a[href="materia.html"],
+      body#aula nav a[href="aula.html"],
+      body#docente nav a[href="docente.html"] {
+        font-weight: bold;
+        color: #032e57; /* Cambia esto según el estilo que desees */
+      }
+  
+      /* Para evitar conflicto con el estado hover */
+      body#carrera nav a[href="carrera.html"]:hover,
+      body#materia nav a[href="materia.html"]:hover,
+      body#aula nav a[href="aula.html"]:hover,
+      body#docente nav a[href="docente.html"]:hover {
+        background-color: inherit; /* Mantener el fondo original */
+        color: #032e57; /* Mantener el color activo */
+      }
+  
 /* Icons and Text */
 .icon-text {
     /* margin-right: 5px;
@@ -126,31 +223,38 @@ nav a:hover {
     font-size: 14px;
 }
 
-#txtDescripción{
-    height: 100%;
-    width: 100%;
-}
 
 .Chkbox {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-  }
-  
-  .Chkbox label {
-    width: auto; /* Ajusta el ancho según sea necesario */
-    text-align: right;
+    }
+    
+    .Chkbox label {
+        width: auto; /* Ajusta el ancho según sea necesario */
+        text-align: right;
     margin-right: 10px;
   }
   
   .Chkbox span {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 10px; 
-  }
-  
-  /* .Chkbox span label {
-    margin-left: px; 
-  }
-   */
+      display: flex;
+      flex-wrap: wrap; 
+      gap: 10px; 
+      }
+      
+      /* .Chkbox span label {
+        margin-left: px; 
+        }
+        */
+        
+        
+        #txtClave, #txtNombre,#cmbCarrera, #txtEspecialidad
+        {
+            width: 95%;
+        }
 
+        #txtSemestre, #txtST, #txtObjetivo,#txtDescripción 
+        {
+                width: 94%;
+        }
+  
